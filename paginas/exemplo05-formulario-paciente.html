@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Paciente</title>
+</head>
+
+<body>
+
+    <form>
+        <!-- 
+        ✔Nome,
+        ✔Idade,
+        ✔Data da consulta,
+        ✔E-mail,
+        ✔Tipo Sanguíneo 
+        ✔Endereço (Estado, CEP, Cidade, Bairro, Logradouro, Numero, Complemento)
+        ✔Estado Civil,
+        ✔Alergias: Alimentos; Ambientais; Medicamentos, Picadas e Contato,
+        foto,
+        Observação
+         -->
+
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" name="nome">
+        </div>
+
+        <div>
+            <label for="campo-idade">Idade</label>
+            <input type="number" id="campo-idade" name="idade">
+        </div>
+
+        <div>
+            <label for="campo-data-consulta">Data da Consulta</label>
+            <input type="date" id="campo-data-consulta" name="data-consulta">
+        </div>
+
+        <div>
+            <label for="campo-email">E-mail</label>
+            <input type="email" id="campo-email" name="email">
+        </div>
+
+        <div>
+            <label for="campo-tipo-sanguineo">Tipo Sanguíneo</label>
+            <select name="tipo-sanguineo" id="campo-tipo-sanguineo">
+                <option value="A+">A Positivo</option>
+                <option value="A-">A Negativo</option>
+                <option value="B+">B Positivo</option>
+                <option value="B-">B Negativo</option>
+                <option value="AB+">AB Positivo</option>
+                <option value="AB-">AB Negativo</option>
+                <option value="O+">O Positivo</option>
+                <option value="O-">O Negativo</option>
+                <!-- B+, B-, AB, AB+, O+, O- -->
+            </select>
+        </div>
+
+        <div>
+            <label for="campo-undade-federativa">UF</label>
+            <select name="unidade-federativa" id="campo-undade-federativa">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+        <div>
+            <label for="campo-cidade">Cidade</label>
+            <input type="text" id="campo-cidade" name="cidade">
+        </div>
+        <div>
+            <label for="campo-bairro">Bairro</label>
+            <input type="text" id="campo-bairro" name="bairro">
+        </div>
+        <div>
+            <label for="campo-cep">CEP</label>
+            <input type="text" id="campo-cep" name="cep">
+        </div>
+        <div>
+            <label for="campo-logradouro">Logradouro</label>
+            <input type="text" id="campo-logradouro" name="logradouro">
+        </div>
+        <div>
+            <label for="campo-numero">Numero</label>
+            <input type="text" id="campo-numero" name="numero">
+        </div>
+        <div>
+            <label for="campo-complemento">Complemento</label>
+            <textarea name="complemento" id="campo-complemento" style=" display: block;" rows="10" cols="60"></textarea>
+        </div>
+
+        <div>
+            <span style="display: block;">Estado Civil</span>
+
+            <input type="radio" value="solteiro(a)" id="campo-estado-civil-solteiro" name="estado-civil">
+            <label for="campo-estado-civil-solteiro">Solteiro(a)</label>
+
+            <input type="radio" value="casado(a)" id="campo-estado-civil-casado" name="estado-civil">
+            <label for="campo-estado-civil-casado">Casado(a)</label>
+
+            <input type="radio" value="divorciado(a)" id="campo-estado-civil-divorciado" name="estado-civil">
+            <label for="campo-estado-civil-divorciado">Divorciado(a)</label>
+        </div>
+
+        <div>
+            <span style="display: block;">Alergias</span>
+
+            <input type="checkbox" id="campo-alergia-alimentos" value="alimentos" name="alergias">
+            <label for="campo-alergia-alimentos">Alimentos</label>
+
+            <input type="checkbox" id="campo-alergia-ambientais" value="ambientais" name="alergias">
+            <label for="campo-alergia-ambientais">Ambientais</label>
+
+            <input type="checkbox" id="campo-alergia-medicamentos" value="medicamentos" name="alergias">
+            <label for="campo-alergia-medicamentos">Medicamentos</label>
+
+            <input type="checkbox" id="campo-alergia-picadas" value="picadas" name="alergias">
+            <label for="campo-alergia-picadas">Picadas</label>
+
+            <input type="checkbox" id="campo-alergia-contato" value="contato" name="alergias">
+            <label for="campo-alergia-contato">Contato</label>
+        </div>
+        
+        <div>
+            <span style="display: block;">Estado Civil</span>
+
+            <input type="radio" value="solteiro(a)" id="campo-estado-civil-solteiro" name="estado-civil">
+            <label for="campo-estado-civil-solteiro">Solteiro(a)</label>
+
+            <input type="radio" value="casado(a)" id="campo-estado-civil-casado" name="estado-civil">
+            <label for="campo-estado-civil-casado">Casado(a)</label>
+
+            <input type="radio" value="divorciado(a)" id="campo-estado-civil-divorciado" name="estado-civil">
+            <label for="campo-estado-civil-divorciado">Divorciado(a)</label>
+        </div>
+
+        <div>
+            <span style="display: block;">Alergias</span>
+
+            <input type="checkbox" id="campo-alergia-alimentos" value="alimentos" name="alergias">
+            <label for="campo-alergia-alimentos">Alimentos</label>
+
+            <input type="checkbox" id="campo-alergia-ambientais" value="ambientais" name="alergias">
+            <label for="campo-alergia-ambientais">Ambientais</label>
+
+            <input type="checkbox" id="campo-alergia-medicamentos" value="medicamentos" name="alergias">
+            <label for="campo-alergia-medicamentos">Medicamentos</label>
+
+            <input type="checkbox" id="campo-alergia-picadas" value="picadas" name="alergias">
+            <label for="campo-alergia-picadas">Picadas</label>
+
+            <input type="checkbox" id="campo-alergia-contato" value="contato" name="alergias">
+            <label for="campo-alergia-contato">Contato</label>
+        </div>
+
+        <button type="submit">Agendar</button>
+    </form>
+</body>
+
+</html>
